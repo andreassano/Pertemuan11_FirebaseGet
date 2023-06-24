@@ -3,7 +3,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="toolbar">Firebase Get</string>
-    <string name="txtnama">Nama : Andreas Novito Andi Sano</string>
+    <string name="txtnama">Nama : Andreas Novito</string>
     <string name="txtnim">NIM : 20102017</string>
     <string name="txttelepon">Telepon : 08696969</string>
 </resources>

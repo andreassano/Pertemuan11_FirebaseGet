@@ -15,6 +15,22 @@
         android:layout_margin="15dp"
         android:layout_height="wrap_content">
 
+        <ImageButton
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/baseline_edit_24"
+            android:backgroundTint="#0095F6" />
+
+        <ImageButton android:id="@+id/btnDellete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/btnEdit"
+            android:src="@drawable/baseline_delete_24"
+            android:backgroundTint="#C2492D" />
+
         <TextView
             android:id="@+id/txtNim"
             android:layout_width="wrap_content"

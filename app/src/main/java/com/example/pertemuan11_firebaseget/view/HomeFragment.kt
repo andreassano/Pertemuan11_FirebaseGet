@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.pertemuan11_firebaseget.R
 import com.example.pertemuan11_firebaseget.adapter.HomeAdapter
@@ -33,6 +34,10 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.btnAdd.setOnClickListener{
+            findNavController().navigate(R.id.action_homeFragment_to_tambahFragment)
+        }
+
         adapter = HomeAdapter(ArrayList())
         binding.rvUser.adapter = adapter
         binding.rvUser.layoutManager = LinearLayoutManager(requireContext())
@@ -52,5 +57,11 @@ class HomeFragment : Fragment() {
                 // Handle database error
             }
         })
+        binding.btnAdd.setOnClickListener{
+            findNavController().navigate(R.id.action_homeFragment_to_tambahFragment)
+        }
+
+        }
+
     }
-}
+
